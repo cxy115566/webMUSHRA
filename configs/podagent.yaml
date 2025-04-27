@@ -3,7 +3,7 @@ testId: podAgent
 bufferSize: 2048
 stopOnErrors: true
 showButtonPreviousPage: true
-remoteService: service/write.php
+remoteService: http://10.210.125.253:10000/receive
 
 
 pages:
