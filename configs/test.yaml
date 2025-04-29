@@ -1,0 +1,111 @@
+# Likert single stimulus page 1 stimulus, two Likert scales with respecitvely 4 and 2 responses
+
+
+testname: Single Stimulus with multiple Likert scales
+testId: lss_multiscale
+bufferSize: 2048
+stopOnErrors: true
+showButtonPreviousPage: true
+remoteService: service/write.php
+
+pages:
+
+    - type: likert_single_stimulus
+      id: lss3
+      name: likert
+      content: Two out of three stimuli will be randomly selected. In order to select the first two, set randomize to false in the config file.
+      showWaveform: true
+      mustRate: true
+      randomize: true
+      maxStimuli: 2
+      stimuli:
+          C1: configs/resources/audio/mono_c1.wav
+          C2: configs/resources/audio/mono_c2.wav
+          C3: configs/resources/audio/mono_c3.wav
+      response:
+        - 
+          - value: 
+            label: 1. ACCURACY/VALIDITY 
+            description: References (print and/or electronic) are provided so informattion can be confirmed or verified in other sources.
+            rate: 10
+            min_value: Does not meet criterion
+            mid_value: Somewhat meets criterion
+            max_value: Meets criterion
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 2. AUDIENCE
+            description: References (print and/or electronic) are provided so informattion can be confirmed or verified in other sources.
+            rate: 5
+            min_value: Does not meet criterion
+            mid_value: Somewhat meets criterion
+            max_value: Meets criterion
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 3. AUDIENCE
+            description: References (print and/or electronic) are provided so informattion can be confirmed or verified in other sources.
+            rate: 10
+            min_value: Does not meet criterion
+            mid_value: Somewhat meets criterion
+            max_value: Meets criterion
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 4. AUDIENCE
+            description: References (print and/or electronic) are provided so informattion can be confirmed or verified in other sources.
+            rate: 10
+            min_value: Does not meet criterion
+            mid_value: Somewhat meets criterion
+            max_value: Meets criterion
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 4. AUDIENCE
+            description: References (print and/or electronic) are provided so informattion can be confirmed or verified in other sources.
+            rate: 10
+            min_value: Does not meet criterion
+            mid_value: Somewhat meets criterion
+            max_value: Meets criterion
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+
+
+
+
+    - type: finish
+      name: Thank you
+      content: Thank you for attending
+      showResults: true
+      writeResults: true
+      writeResults: true
+      questionnaire:
+          - type: text
+            label: eMail
+            name: email
+          - type: number
+            label: Age
+            name: age
+            min: 0
+            max: 100
+            default: 30
+          - type: likert
+            name: gender
+            label: Gender
+            response:
+             - value: female
+               label: Female
+             - value: male
+               label: Male
+             - value: other
+               label: Other
+
