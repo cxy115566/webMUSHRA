@@ -29,7 +29,8 @@ input[type=number] {
 
 body {
   font-family: sans-serif,verdana,Helvetica,Arial;
-  text-align:center;
+  text-align:left;
+  font-size: 16pt;
   background-repeat: repeat-x;
   background-position: 0 5em; 
   background-color: #EEE;
@@ -97,7 +98,7 @@ td.logo {
 }
 
 img.logo {
-  height: 2.5em;
+  height: 3.5em;
 }
 
 table.logo {
@@ -160,8 +161,9 @@ td.stopButton {
 
 .ui-tolito-progressbar-active-b
 {
-  background: #FFb500;
+  background: rgb(113, 0, 139) ;
   /*
+  #FFb500
   background-image: linear-gradient( #6FACD5, #497BAE);
   background-image: -moz-linear-gradient( #6FACD5, #497BAE);
   background-image: -ms-linear-gradient( #6FACD5, #497BAE);
@@ -233,13 +235,25 @@ td.stopButton {
 
 li{
 	text-align:left;
-	width:50%;
-	margin-left:25%;
+	/* width:50%;
+	margin-left:25%; */
 }
 
 .left {
 	text-align:left;
 	width:50%;
 	margin-left:25%;
+}
+
+.highlight {
+  color: rgb(113, 0, 139); /* 深蓝色 */
+  font-weight: bold; /* 加粗可选 */
+}
+
+.content-header {
+  padding-top: 200px;
+  color: rgb(0, 0, 0); /* 黑色 */
+  font-weight: bold; /* 加粗可选 */
+  text-align:left
 }
 
