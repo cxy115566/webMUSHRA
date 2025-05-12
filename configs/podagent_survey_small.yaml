@@ -33,7 +33,7 @@ pages:
       showWaveform: true
       mustRate: true
       randomize: false
-      maxStimuli: 2
+      maxStimuli: 1
       stimuli:
           Arts_17: configs/resources/audio/mono_c1.wav
           Arts_19: configs/resources/audio/mono_c2.wav

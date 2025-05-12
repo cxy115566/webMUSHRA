@@ -3,7 +3,7 @@ testId: podAgent
 bufferSize: 2048
 stopOnErrors: true
 showButtonPreviousPage: true
-remoteService: http://34.203.246.255:8000/receive
+remoteService: https://34.203.246.255:8000/receive
 
 
 pages:
