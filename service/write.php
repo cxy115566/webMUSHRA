@@ -26,7 +26,6 @@ if(version_compare(PHP_VERSION, '8.0.0', '<') and get_magic_quotes_gpc()){
 	$sessionParam = $_POST['sessionJSON'];
 }
 
-
 $session = json_decode($sessionParam);
 
 
@@ -36,6 +35,7 @@ $filepathPostfix = ".csv";
 if (!is_dir($filepathPrefix)) {
     mkdir($filepathPrefix);
 }
+
 $length = count($session->participant->name);
 // mushra
 $write_mushra = false;
@@ -192,7 +192,7 @@ $input = array("session_test_id");
 for($i =0; $i < $length; $i++){
 	array_push($input, $session->participant->name[$i]);
 }
-array_push($input,  "trial_id", "stimuli_rating", "stimuli", "rating_time");
+array_push($input,  "trial_id", "stimuli_rating", "audio_id", "rating_time");
 array_push($lmsCSVdata, $input);
 
 
@@ -236,35 +236,38 @@ $write_lss = false;
 $lssCSVdata = array();
 // array_push($lssCSVdata, array("session_test_id", "participant_email", "participant_age", "participant_gender", "trial_id", "stimuli_rating", "stimuli", "rating_time"));
 
-$input = array("session_test_id");
+$input = array("Session_test_id");
+array_push($input,  "UserID");
 for($i =0; $i < $length; $i++){
 	array_push($input, $session->participant->name[$i]);
 }
-array_push($input,  "trial_id");
+array_push($input,  "System");
+array_push($input, "audioID", "rating_time/s");
 $ratingCount = count($session->trials[0]->responses[0]->stimulusRating);
 if($ratingCount > 1) {
     for($i =0; $i < $ratingCount; $i++){
-        array_push($input, "stimuli_rating" . ($i+1));
+        array_push($input, "Q" . ($i+1));
     }
 } else {
     array_push($input, "stimuli_rating");
 }
-array_push($input, "stimuli", "rating_time");
+
 array_push($lssCSVdata, $input);
 
 foreach($session->trials as $trial) {
-	
 	if($trial->type == "likert_single_stimulus") {
 		foreach ($trial->responses as $response) {
 			$write_lss = true; 
 			
 				$results = array($session->testId);
+        array_push($results, $session->uuid);
 			for($i =0; $i < $length; $i++){
 				array_push($results, $session->participant->response[$i]);
 			}
             array_push($results, $trial->id);
+            array_push($results, $response->stimulus, $response->time/1000);
             $results = array_merge($results, $response->stimulusRating);
-            array_push($results, $response->stimulus, $response->time);
+            
 		  
 		  	array_push($lssCSVdata, $results); 
 			

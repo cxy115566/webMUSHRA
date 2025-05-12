@@ -17,6 +17,20 @@ input[type=number] {
     -moz-appearance:textfield;
 }
 
+
+
+
+.ui-radio-1 {
+  width: 50px; /* 按钮宽度 */
+  height: 50px; /* 按钮高度 */
+ 
+}
+.ui-radio-2 {
+  width: 100px; /* 按钮宽度 */
+  height: 50px; /* 按钮高度 */
+  margin-right: 12px;
+}
+
 .ui-slider-track.ui-state-disabled {  
   opacity: 1.0;
   -webkit-filter: brightness(1.1) contrast(0.8) brightness(1.1) contrast(0.8) brightness(1.1) contrast(0.8) brightness(1.1) contrast(0.8) brightness(1.1) contrast(0.8)  brightness(1.05);
@@ -30,7 +44,7 @@ input[type=number] {
 body {
   font-family: sans-serif,verdana,Helvetica,Arial;
   text-align:left;
-  font-size: 13pt;
+  font-size: 12pt;
   background-repeat: repeat-x;
   background-position: 0 5em; 
   background-color: #EEE;
@@ -98,7 +112,7 @@ td.logo {
 }
 
 img.logo {
-  height: 3.5em;
+  height: 1.5em;
 }
 
 table.logo {
@@ -257,3 +271,54 @@ li{
   text-align:left
 }
 
+/* 调整标签样式 */
+.label {
+  display: inline-block; /* 使标签在一行显示 */
+  margin: 0 5px; /* 调整按钮之间的间距 */
+  font-size: 14px; /* 调整字体大小 */
+}
+
+/* 调整图片大小 */
+.img {
+  width: 30px; /* 图片宽度 */
+  height: 30px; /* 图片高度 */
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.label-left, .label-right {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px; /* 调整字体大小 */
+}
+
+.custom-label {
+  display: inline-block;
+  font-size: 14px;
+}
+
+
+
+.underline {
+  text-decoration: underline;
+}
+
+.session-header {
+  color: rgb(1, 1, 1);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.session-description {
+  color: rgb(1, 1, 1);
+  font-weight: bold;
+  font-size: 1.0em;
+}
+
+label.custom-label2 {
+  display: inline-block;
+  font-size: 12px;
+}
