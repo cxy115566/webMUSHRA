@@ -66,13 +66,20 @@ function callbackURLFound() {
 }
 
 function addPagesToPageManager(_pageManager, _pages) {
+  var isRandom = false;
   for (var i = 0; i < _pages.length; ++i) {
     if (Array.isArray(_pages[i])) {
       if (_pages[i][0] === "random") {
+        isRandom = true;
         _pages[i].shift();
         shuffle(_pages[i]);
       }
-      addPagesToPageManager(_pageManager, _pages[i]);
+      if (isRandom){
+        addPagesToPageManager(_pageManager, [_pages[i][0]]);
+      }else{
+        addPagesToPageManager(_pageManager, _pages[i]);
+      }
+       
     } else {
       var pageConfig = _pages[i];
       if (pageConfig.type == "generic") {
@@ -181,7 +188,7 @@ function startup(config) {
 
   try {
     audioContext.destination.channelCountMode = "explicit";
-    audioContext.destination.channelInterpretation = "discrete";
+    // audioContext.destination.channelInterpretation = "discrete";
     audioContext.destination.channelCount = audioContext.destination.maxChannelCount;
   } catch (e) {
     console.log("webMUSHRA: Could not set channel count of destination node.");

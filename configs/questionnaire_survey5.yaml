@@ -1,0 +1,278 @@
+testname: Podcast Listening Questionnaire 
+testId: questionnaire
+bufferSize: 2048
+stopOnErrors: true
+showButtonPreviousPage: true
+remoteService: service/write.php
+
+
+
+pages: 
+    - type: generic
+      id: first_page
+      name: Welcome to the <span class="highlight">Podcast Audio Evaluation Survey</span>!
+      content: <p></p>
+        <span class="content-header">Survey Description:</span> 
+        <p> In the following test pages, each will include <span class="highlight">a podcast audio</span> file approximately 3 minutes long. This audio file is created by combining three segments from a full podcast episode:</p>
+          <p> &lt;The <span class="highlight">first</span> minute | The <span class="highlight">middle</span> minute | The <span class="highlight">final</span> minute&gt;</p>
+          <p>A notification sound will indicate the transitions between these segments. After listening to the audio, please complete the questionnaire provided on the page.</p>
+        <p></p>
+        <span class="content-header">About the questionnaire:</span>
+        <p> It is designed to evaluate the quality of a podcast based on various key dimensions. It consists of two sections:</p>
+        <ol>
+        <li><span class="highlight">Quantitative Analysis (11 questions)</span>: Rate each question on a scale of <span class="highlight">0 to 10</span> (where <span class="highlight">0</span> = not met at all, <span class="highlight">5</span> = moderately met, <span class="highlight">10</span> = fully met). Comments are optional but encouraged.</li>
+        <li><span class="highlight">Qualitative Analysis (5 questions)</span>: Answer <span class="highlight">YES/NO/CAN’T TELL</span> to specific questions to provide additional feedback.</li>
+        </ol>
+        <p>Your feedback is invaluable and will help improve the quality and effectiveness of the podcast. Thank you for your participation!</p>
+        
+          
+    - type: likert_single_stimulus
+      id: System5
+      name: System
+      content:  
+      showWaveform: true
+      mustRate: true
+      randomize: true
+      maxStimuli: 3
+      stimuli:
+          Science_and_Technology_mooncast: configs/resources/audio/survey/mooncast/Science_and_Technology_30.wav
+          Science_and_Technology_podagent: configs/resources/audio/survey/podagent/Science_and_Technology_28.wav
+          Science_and_Technology_reference: configs/resources/audio/survey/reference/Science_and_Technology_28.wav
+      response:
+        - 
+          - value: 
+            title: Section 1: Quantitative Analysis (0-10 Scale)
+            description: <span class="highlight">0</span> = not met at all, <span class="highlight">5</span> = moderately met, <span class="highlight">10</span> = fully met. Comments are optional but encouraged.
+            label: 1. How well does the <span class="highlight">speakers’ voice</span> <span class="underline"> align with the tone and content of the podcast</span>?
+            type: rate
+            rate: 11
+            min_value: not met at all
+            mid_value: moderately met
+            max_value: fully met
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 2. How <span class="underline">clearly and effectively</span> do the <span class="highlight">speakers</span> <span class="underline">deliver the podcast content</span>?
+                  <p>(Does their delivery make the main ideas easy to understand?)</p>
+            type: rate
+            rate: 11
+            min_value: not met at all
+            mid_value: moderately met
+            max_value: fully met
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 3. Are <span class="highlight">words</span> <span class="underline">pronounced and enunciated correctly and clearly</span>?
+            type: rate
+            rate: 11
+            min_value: not met at all
+            mid_value: moderately met
+            max_value: fully met
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 4. How <span class="underline">engaging</span> is the <span class="highlight">speakers' vocal delivery</span> (e.g., tone, pitch, emphasis)?
+            type: rate
+            rate: 11
+            min_value: not met at all
+            mid_value: moderately met
+            max_value: fully met
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 5. Is the <span class="highlight">speaking pace</span> <span class="underline">appropriate and easy to follow</span>?
+            type: rate
+            rate: 11
+            min_value: not met at all
+            mid_value: moderately met
+            max_value: fully met
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        - 
+          - value: 
+            label: 6. How <span class="highlight">engaging and enjoyable</span> is the podcast? &lpar;Does it sustain your attention throughout the episode?&rpar;
+            type: rate
+            rate: 11
+            min_value: not met at all
+            mid_value: moderately met
+            max_value: fully met
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 7. How well does the podcast <span class="underline">evoke interest, curiosity, or other emotions</span> to <span class="highlight">enhance your listening experience</span>?
+            type: rate
+            rate: 11
+            min_value: not met at all
+            mid_value: moderately met
+            max_value: fully met
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        - 
+          - value: 
+            label: 8. How clear and balanced is the <span class="highlight">audio quality</span>? (Does it support comprehension without distracting noise or technical issues?)
+            type: rate
+            rate: 11
+            min_value: not met at all
+            mid_value: moderately met
+            max_value: fully met
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        - 
+          - value: 
+            label: 9. If <span class="highlight">background music or sound effects</span> are present, how well do they <span class="highlight">enhance</span> rather than interfere with the content? 
+              (Select 0 if there is no background music or sound effects)
+            type: rate
+            rate: 11
+            min_value: not met at all
+            mid_value: moderately met
+            max_value: fully met
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        - 
+          - value: 
+            label: 10. How <span class="highlight">unique or innovative</span> is the podcast content?
+                (Does it offer a fresh perspective or stand out from similar content?)
+            type: rate
+            rate: 11
+            min_value: not met at all
+            mid_value: moderately met
+            max_value: fully met
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        - 
+          - value: 
+            label: 11. How  likely are you to <span class="highlight">want to listen to the full episode</span> after hearing this excerpt?
+            type: rate
+            rate: 11
+            min_value: not met at all
+            mid_value: moderately met
+            max_value: fully met
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            title: Section 2: Qualitative Analysis (YES/NO/CAN’T TELL)
+            label: 12. Does the podcast clearly communicate its purpose and objective?
+            type: select
+            select_value: YES/NO/CAN’T TELL
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 13. Does the podcast include a clear introduction and conclusion?
+            type: select
+            select_value: YES/NO/CAN’T TELL
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 14. Are transitions between segments smooth and logical?
+            type: select
+            select_value: YES/NO/CAN’T TELL
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 15. Are background music or sound effects present in the podcast?
+            type: select
+            select_value: YES/NO/CAN’T TELL
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            label: 16. Does the podcast sound like it was created by humans rather than AI?（"Yes" = more like humans, "No" = more like AI）
+            type: select
+            select_value: YES/NO/CAN’T TELL
+            img: configs/resources/images/star_off.png
+            imgSelected: configs/resources/images/star_on.png
+            imgHigherResponseSelected: configs/resources/images/star_on.png
+        -
+          - value: 
+            title: Additional Comments (Optional)
+            label: 17. Any additional comments on this podcast audio?
+            type: option
+
+    - type: finish
+      name: Thank you
+      content: Thank you for attending!
+      showResults: true
+      writeResults: true
+      questionnaire:
+          - type: likert
+            name: ebackground
+            label: Education Background
+            response:
+               - type: select
+                 select_value: Less than high school/High school or equivalent/Bachelor’s degree/Master’s degree/Doctorate or higher
+          - type: likert
+            label: Have you ever created a podcast before?
+            name: cratePodcast
+            response:
+               - type: select
+                 select_value: Yes/No
+          - type: likert
+            label: Have you listened to podcasts before?
+            name: listenPodcast
+            response:
+               - type: select
+                 select_value: Yes/No
+          - type: likert2
+            name: typePodcasts 
+            label: If yes, what types of podcasts do you listen to? (Select all that apply) 
+            response:
+             - value: Society and Culture
+               label: Society and Culture
+             - value: Comedy
+               label: Comedy
+             - value: News
+               label: News
+             - value: Education
+               label: Education
+             - value: Business
+               label: Business
+             - value: Health and fitness 
+               label: Health and fitness
+             - value: Arts
+               label: Arts
+             - value: Music
+               label: Music
+             - value: Sports
+               label: Sports
+             - value: Science and Technology
+               label: Science and Technology
+             - value: History
+               label: History
+             - value: True Crime
+               label: True Crime
+             - value: Kids and family
+               label: Kids and family
+             - value: TV and Film
+               label: TV and Film
+             - value: Leisure
+               label: Leisure
+             - value: Fiction
+               label: Fiction
+             - value: Mental health
+               label: Mental health
+             - value: Other
+               label: Other:<input id="other"></input>

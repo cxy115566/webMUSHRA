@@ -33,7 +33,7 @@ $filepathPrefix = "../results/".sanitize($string = $session->testId, $is_filenam
 $filepathPostfix = ".csv";
 
 if (!is_dir($filepathPrefix)) {
-    mkdir($filepathPrefix);
+    mkdir($filepathPrefix, 0755, true);
 }
 
 $length = count($session->participant->name);
@@ -41,20 +41,18 @@ $length = count($session->participant->name);
 $write_mushra = false;
 $mushraCsvData = array();
 
-
 $input = array("session_test_id");
 for($i =0; $i < $length; $i++){
 	array_push($input, $session->participant->name[$i]);
 }
-array_push($input, "session_uuid", "trial_id", "rating_stimulus", "rating_score", "rating_time", "rating_comment");
+array_push($input, "session_uuid", "trial_id", "rating_stimulus", "rating_score", "rating_time/ms", "rating_comment");
 array_push($mushraCsvData, $input);
 
  
  
  foreach ($session->trials as $trial) {
   if ($trial->type == "mushra") {
-  $write_mushra = true;
-
+    $write_mushra = true;
     foreach ($trial->responses as $response) {
 
 
@@ -75,14 +73,15 @@ array_push($mushraCsvData, $input);
 }
 		
 if ($write_mushra) {
-	$filename = $filepathPrefix."mushra".$filepathPostfix;
+	$filename = $filepathPrefix.$session->uuid.$filepathPostfix;
 	$isFile = is_file($filename);
 	$fp = fopen($filename, 'a');
 	foreach ($mushraCsvData as $row) {
 		if ($isFile) {	    	
 			$isFile = false;
 		} else {
-		   fputcsv($fp, $row);
+       fputcsv($fp, $row, ',', '"', '\\');
+		  //  fputcsv($fp, $row);
 		}
 	}
 	fclose($fp);
@@ -243,7 +242,13 @@ for($i =0; $i < $length; $i++){
 }
 array_push($input,  "System");
 array_push($input, "audioID", "rating_time/s");
-$ratingCount = count($session->trials[0]->responses[0]->stimulusRating);
+
+if (property_exists($session->trials[0]->responses[0], 'stimulusRating')) {
+  $ratingCount = count($session->trials[0]->responses[0]->stimulusRating);
+} else {
+  $ratingCount = 0;
+}
+
 if($ratingCount > 1) {
     for($i =0; $i < $ratingCount; $i++){
         array_push($input, "Q" . ($i+1));
@@ -277,7 +282,7 @@ foreach($session->trials as $trial) {
 }
 
 if($write_lss){
-	$filename = $filepathPrefix."lss".$filepathPostfix;
+	$filename = $filepathPrefix.$session->uuid.$filepathPostfix;
 	$isFile = is_file($filename); 
 	$fp = fopen($filename, 'a');
 	foreach($lssCSVdata as $row){
