@@ -46,7 +46,7 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Arts_19.wav
       createAnchor35: false
       createAnchor70: false
@@ -72,15 +72,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Business_13.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_Business1: configs/resources/audio/dialogue_samples/HQ/Business_13.wav
-          LQ_Business1: configs/resources/audio/dialogue_samples/LQ/Business_13.wav
-          mooncast_Business1: configs/resources/audio/dialogue_samples/mooncast/Business_13.wav
-          podagent_Business1: configs/resources/audio/dialogue_samples/podagent/Business_14.wav
+          HQ_Business: configs/resources/audio/dialogue_samples/HQ/Business_13.wav
+          LQ_Business: configs/resources/audio/dialogue_samples/LQ/Business_13.wav
+          mooncast_Business: configs/resources/audio/dialogue_samples/mooncast/Business_13.wav
+          podagent_Business: configs/resources/audio/dialogue_samples/podagent/Business_14.wav
     - type: mushra
       id: trial_Comedy
       name: TEST 3
@@ -98,15 +98,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Comedy_4.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_Comedy1: configs/resources/audio/dialogue_samples/HQ/Comedy_4.wav
-          LQ_Comedy1: configs/resources/audio/dialogue_samples/LQ/Comedy_4.wav
-          mooncast_Comedy1: configs/resources/audio/dialogue_samples/mooncast/Comedy_5.wav
-          podagent_Comedy1: configs/resources/audio/dialogue_samples/podagent/Comedy_4.wav
+          HQ_Comedy: configs/resources/audio/dialogue_samples/HQ/Comedy_4.wav
+          LQ_Comedy: configs/resources/audio/dialogue_samples/LQ/Comedy_4.wav
+          mooncast_Comedy: configs/resources/audio/dialogue_samples/mooncast/Comedy_5.wav
+          podagent_Comedy: configs/resources/audio/dialogue_samples/podagent/Comedy_4.wav
     - type: mushra
       id: trial_Education
       name: TEST 4
@@ -124,15 +124,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Education_11.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_Education1: configs/resources/audio/dialogue_samples/HQ/Education_11.wav
-          LQ_Education1: configs/resources/audio/dialogue_samples/LQ/Education_10.wav
-          mooncast_Education1: configs/resources/audio/dialogue_samples/mooncast/Education_10.wav
-          podagent_Education1: configs/resources/audio/dialogue_samples/podagent/Education_11.wav
+          HQ_Education: configs/resources/audio/dialogue_samples/HQ/Education_11.wav
+          LQ_Education: configs/resources/audio/dialogue_samples/LQ/Education_10.wav
+          mooncast_Education: configs/resources/audio/dialogue_samples/mooncast/Education_10.wav
+          podagent_Education: configs/resources/audio/dialogue_samples/podagent/Education_11.wav
     - type: mushra
       id: trial_Fiction
       name: TEST 5
@@ -150,15 +150,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Fiction_48.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_Fiction1: configs/resources/audio/dialogue_samples/HQ/Fiction_48.wav
-          LQ_Fiction1: configs/resources/audio/dialogue_samples/LQ/Fiction_46.wav
-          mooncast_Fiction1: configs/resources/audio/dialogue_samples/mooncast/Fiction_46.wav
-          podagent_Fiction1: configs/resources/audio/dialogue_samples/podagent/Fiction_46.wav
+          HQ_Fiction: configs/resources/audio/dialogue_samples/HQ/Fiction_48.wav
+          LQ_Fiction: configs/resources/audio/dialogue_samples/LQ/Fiction_46.wav
+          mooncast_Fiction: configs/resources/audio/dialogue_samples/mooncast/Fiction_46.wav
+          podagent_Fiction: configs/resources/audio/dialogue_samples/podagent/Fiction_46.wav
     - type: mushra
       id: trial_Health_and_Fitness
       name: TEST 6
@@ -176,15 +176,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Health_and_Fitness_16.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_Health_and_Fitness1: configs/resources/audio/dialogue_samples/HQ/Health_and_Fitness_16.wav
-          LQ_Health_and_Fitness1: configs/resources/audio/dialogue_samples/LQ/Health_and_Fitness_16.wav
-          mooncast_Health_and_Fitness1: configs/resources/audio/dialogue_samples/mooncast/Health_and_Fitness_16.wav
-          podagent_Health_and_Fitness1: configs/resources/audio/dialogue_samples/podagent/Health_and_Fitness_16.wav
+          HQ_Health_and_Fitness: configs/resources/audio/dialogue_samples/HQ/Health_and_Fitness_16.wav
+          LQ_Health_and_Fitness: configs/resources/audio/dialogue_samples/LQ/Health_and_Fitness_16.wav
+          mooncast_Health_and_Fitness: configs/resources/audio/dialogue_samples/mooncast/Health_and_Fitness_16.wav
+          podagent_Health_and_Fitness: configs/resources/audio/dialogue_samples/podagent/Health_and_Fitness_16.wav
     - type: mushra
       id: trial_History
       name: TEST 7
@@ -202,15 +202,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/History_33.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_History1: configs/resources/audio/dialogue_samples/HQ/History_33.wav
-          LQ_History1: configs/resources/audio/dialogue_samples/LQ/History_32.wav
-          mooncast_History1: configs/resources/audio/dialogue_samples/mooncast/History_33.wav
-          podagent_History1: configs/resources/audio/dialogue_samples/podagent/History_32.wav
+          HQ_History: configs/resources/audio/dialogue_samples/HQ/History_33.wav
+          LQ_History: configs/resources/audio/dialogue_samples/LQ/History_32.wav
+          mooncast_History: configs/resources/audio/dialogue_samples/mooncast/History_33.wav
+          podagent_History: configs/resources/audio/dialogue_samples/podagent/History_32.wav
     - type: mushra
       id: trial_Kids_and_Family
       name: TEST 8
@@ -228,15 +228,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Kids_and_Family_37.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_Kids_and_Family1: configs/resources/audio/dialogue_samples/HQ/Kids_and_Family_37.wav
-          LQ_Kids_and_Family1: configs/resources/audio/dialogue_samples/LQ/Kids_and_Family_38.wav
-          mooncast_Kids_and_Family1: configs/resources/audio/dialogue_samples/mooncast/Kids_and_Family_38.wav
-          podagent_Kids_and_Family1: configs/resources/audio/dialogue_samples/podagent/Kids_and_Family_38.wav
+          HQ_Kids_and_Family: configs/resources/audio/dialogue_samples/HQ/Kids_and_Family_37.wav
+          LQ_Kids_and_Family: configs/resources/audio/dialogue_samples/LQ/Kids_and_Family_38.wav
+          mooncast_Kids_and_Family: configs/resources/audio/dialogue_samples/mooncast/Kids_and_Family_38.wav
+          podagent_Kids_and_Family: configs/resources/audio/dialogue_samples/podagent/Kids_and_Family_38.wav
     - type: mushra
       id: trial_Leisure
       name: TEST 9
@@ -254,15 +254,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Leisure_45.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_Leisure1: configs/resources/audio/dialogue_samples/HQ/Leisure_45.wav
-          LQ_Leisure1: configs/resources/audio/dialogue_samples/LQ/Leisure_44.wav
-          mooncast_Leisure1: configs/resources/audio/dialogue_samples/mooncast/Leisure_43.wav
-          podagent_Leisure1: configs/resources/audio/dialogue_samples/podagent/Leisure_43.wav
+          HQ_Leisure: configs/resources/audio/dialogue_samples/HQ/Leisure_45.wav
+          LQ_Leisure: configs/resources/audio/dialogue_samples/LQ/Leisure_44.wav
+          mooncast_Leisure: configs/resources/audio/dialogue_samples/mooncast/Leisure_43.wav
+          podagent_Leisure: configs/resources/audio/dialogue_samples/podagent/Leisure_43.wav
     - type: mushra
       id: trial_Mental_Health
       name: TEST 10
@@ -280,17 +280,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Mental_Health_51.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_Mental_Health1: configs/resources/audio/dialogue_samples/HQ/Mental_Health_51.wav
-          LQ_Mental_Health1: configs/resources/audio/dialogue_samples/LQ/Mental_Health_51.wav
-          mooncast_Mental_Health1: configs/resources/audio/dialogue_samples/mooncast/Mental_Health_49.wav
-          podagent_Mental_Health1: configs/resources/audio/dialogue_samples/podagent/Mental_Health_49.wav
-          podagent_Mental_Health2: configs/resources/audio/dialogue_samples/podagent/Mental_Health_51.wav
-          podagent_Mental_Health3: configs/resources/audio/dialogue_samples/podagent/Mental_Health_50.wav
+          HQ_Mental_Health: configs/resources/audio/dialogue_samples/HQ/Mental_Health_51.wav
+          LQ_Mental_Health: configs/resources/audio/dialogue_samples/LQ/Mental_Health_51.wav
+          mooncast_Mental_Health: configs/resources/audio/dialogue_samples/mooncast/Mental_Health_49.wav
+          podagent_Mental_Health: configs/resources/audio/dialogue_samples/podagent/Mental_Health_50.wav
     - type: mushra
       id: trial_Music
       name: TEST 11
@@ -308,17 +306,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Music_23.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_Music1: configs/resources/audio/dialogue_samples/HQ/Music_23.wav
-          LQ_Music1: configs/resources/audio/dialogue_samples/LQ/Music_24.wav
-          mooncast_Music1: configs/resources/audio/dialogue_samples/mooncast/Music_23.wav
-          podagent_Music1: configs/resources/audio/dialogue_samples/podagent/Music_22.wav
-          podagent_Music2: configs/resources/audio/dialogue_samples/podagent/Music_23.wav
-          podagent_Music3: configs/resources/audio/dialogue_samples/podagent/Music_24.wav
+          HQ_Music: configs/resources/audio/dialogue_samples/HQ/Music_23.wav
+          LQ_Music: configs/resources/audio/dialogue_samples/LQ/Music_24.wav
+          mooncast_Music: configs/resources/audio/dialogue_samples/mooncast/Music_23.wav
+          podagent_Music: configs/resources/audio/dialogue_samples/podagent/Music_24.wav
     - type: mushra
       id: trial_News
       name: TEST 12
@@ -336,17 +332,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/News_8.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_News1: configs/resources/audio/dialogue_samples/HQ/News_8.wav
-          LQ_News1: configs/resources/audio/dialogue_samples/LQ/News_7.wav
-          mooncast_News1: configs/resources/audio/dialogue_samples/mooncast/News_8.wav
-          podagent_News1: configs/resources/audio/dialogue_samples/podagent/News_7.wav
-          podagent_News2: configs/resources/audio/dialogue_samples/podagent/News_8.wav
-          podagent_News3: configs/resources/audio/dialogue_samples/podagent/News_9.wav
+          HQ_News: configs/resources/audio/dialogue_samples/HQ/News_8.wav
+          LQ_News: configs/resources/audio/dialogue_samples/LQ/News_7.wav
+          mooncast_News: configs/resources/audio/dialogue_samples/mooncast/News_8.wav
+          podagent_News: configs/resources/audio/dialogue_samples/podagent/News_8.wav
     - type: mushra
       id: trial_Science_and_Technology
       name: TEST 13
@@ -364,17 +358,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Science_and_Technology_29.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_Science_and_Technology1: configs/resources/audio/dialogue_samples/HQ/Science_and_Technology_29.wav
-          LQ_Science_and_Technology1: configs/resources/audio/dialogue_samples/LQ/Science_and_Technology_30.wav
-          mooncast_Science_and_Technology1: configs/resources/audio/dialogue_samples/mooncast/Science_and_Technology_28.wav
-          podagent_Science_and_Technology1: configs/resources/audio/dialogue_samples/podagent/Science_and_Technology_30.wav
-          podagent_Science_and_Technology2: configs/resources/audio/dialogue_samples/podagent/Science_and_Technology_28.wav
-          podagent_Science_and_Technology3: configs/resources/audio/dialogue_samples/podagent/Science_and_Technology_29.wav
+          HQ_Science_and_Technology: configs/resources/audio/dialogue_samples/HQ/Science_and_Technology_29.wav
+          LQ_Science_and_Technology: configs/resources/audio/dialogue_samples/LQ/Science_and_Technology_30.wav
+          mooncast_Science_and_Technology: configs/resources/audio/dialogue_samples/mooncast/Science_and_Technology_28.wav
+          podagent_Science_and_Technology: configs/resources/audio/dialogue_samples/podagent/Science_and_Technology_30.wav
     - type: mushra
       id: trial_Society_and_Culture
       name: TEST 14
@@ -392,17 +384,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Society_and_Culture_1.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_Society_and_Culture1: configs/resources/audio/dialogue_samples/HQ/Society_and_Culture_1.wav
-          LQ_Society_and_Culture1: configs/resources/audio/dialogue_samples/LQ/Society_and_Culture_3.wav
-          mooncast_Society_and_Culture1: configs/resources/audio/dialogue_samples/mooncast/Society_and_Culture_2.wav
-          podagent_Society_and_Culture1: configs/resources/audio/dialogue_samples/podagent/Society_and_Culture_1.wav
-          podagent_Society_and_Culture2: configs/resources/audio/dialogue_samples/podagent/Society_and_Culture_2.wav
-          podagent_Society_and_Culture3: configs/resources/audio/dialogue_samples/podagent/Society_and_Culture_3.wav
+          HQ_Society_and_Culture: configs/resources/audio/dialogue_samples/HQ/Society_and_Culture_1.wav
+          LQ_Society_and_Culture: configs/resources/audio/dialogue_samples/LQ/Society_and_Culture_3.wav
+          mooncast_Society_and_Culture: configs/resources/audio/dialogue_samples/mooncast/Society_and_Culture_2.wav
+          podagent_Society_and_Culture: configs/resources/audio/dialogue_samples/podagent/Society_and_Culture_1.wav
     - type: mushra
       id: trial_Sports
       name: TEST 15
@@ -420,17 +410,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/Sports_27.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_Sports1: configs/resources/audio/dialogue_samples/HQ/Sports_27.wav
-          LQ_Sports1: configs/resources/audio/dialogue_samples/LQ/Sports_25.wav
-          mooncast_Sports1: configs/resources/audio/dialogue_samples/mooncast/Sports_26.wav
-          podagent_Sports1: configs/resources/audio/dialogue_samples/podagent/Sports_27.wav
-          podagent_Sports2: configs/resources/audio/dialogue_samples/podagent/Sports_26.wav
-          podagent_Sports3: configs/resources/audio/dialogue_samples/podagent/Sports_25.wav
+          HQ_Sports: configs/resources/audio/dialogue_samples/HQ/Sports_27.wav
+          LQ_Sports: configs/resources/audio/dialogue_samples/LQ/Sports_25.wav
+          mooncast_Sports: configs/resources/audio/dialogue_samples/mooncast/Sports_26.wav
+          podagent_Sports: configs/resources/audio/dialogue_samples/podagent/Sports_26.wav
     - type: mushra
       id: trial_True_Crime
       name: TEST 16
@@ -448,17 +436,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/True_Crime_36.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_True_Crime1: configs/resources/audio/dialogue_samples/HQ/True_Crime_36.wav
-          LQ_True_Crime1: configs/resources/audio/dialogue_samples/LQ/True_Crime_35.wav
-          mooncast_True_Crime1: configs/resources/audio/dialogue_samples/mooncast/True_Crime_35.wav
-          podagent_True_Crime1: configs/resources/audio/dialogue_samples/podagent/True_Crime_36.wav
-          podagent_True_Crime2: configs/resources/audio/dialogue_samples/podagent/True_Crime_35.wav
-          podagent_True_Crime3: configs/resources/audio/dialogue_samples/podagent/True_Crime_34.wav   
+          HQ_True_Crime: configs/resources/audio/dialogue_samples/HQ/True_Crime_36.wav
+          LQ_True_Crime: configs/resources/audio/dialogue_samples/LQ/True_Crime_35.wav
+          mooncast_True_Crime: configs/resources/audio/dialogue_samples/mooncast/True_Crime_35.wav
+          podagent_True_Crime: configs/resources/audio/dialogue_samples/podagent/True_Crime_35.wav 
     - type: mushra
       id: trial_TV_and_Film
       name: TEST 17
@@ -476,16 +462,15 @@ pages:
         <li> <span class="highlight">80 - 100  (Excellent):</span> The dialogue sounds completely natural, like a real, spontaneous conversation between people. </li>
         </ul>
       showWaveform: true
-      enableLooping: true 
+      enableLooping: false 
       reference: configs/resources/audio/dialogue_samples/reference/TV_and_Film_41.wav
       createAnchor35: false
       createAnchor70: false
       stimuli:
-          HQ_TV_and_Film1: configs/resources/audio/dialogue_samples/HQ/TV_and_Film_41.wav
-          LQ_TV_and_Film1: configs/resources/audio/dialogue_samples/LQ/TV_and_Film_41.wav
-          mooncast_TV_and_Film1: configs/resources/audio/dialogue_samples/mooncast/TV_and_Film_40.wav
-          podagent_TV_and_Film1: configs/resources/audio/dialogue_samples/podagent/TV_and_Film_40.wav
-          podagent_TV_and_Film2: configs/resources/audio/dialogue_samples/podagent/TV_and_Film_41.wav
+          HQ_TV_and_Film: configs/resources/audio/dialogue_samples/HQ/TV_and_Film_41.wav
+          LQ_TV_and_Film: configs/resources/audio/dialogue_samples/LQ/TV_and_Film_41.wav
+          mooncast_TV_and_Film: configs/resources/audio/dialogue_samples/mooncast/TV_and_Film_40.wav
+          podagent_TV_and_Film: configs/resources/audio/dialogue_samples/podagent/TV_and_Film_40.wav
     - type: finish
       name: Thank you
       content: Thank you for attending!

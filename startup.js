@@ -187,7 +187,7 @@ function startup(config) {
   }, true);
 
   try {
-    audioContext.destination.channelCountMode = "explicit";
+    // audioContext.destination.channelCountMode = "explicit";
     // audioContext.destination.channelInterpretation = "discrete";
     audioContext.destination.channelCount = audioContext.destination.maxChannelCount;
   } catch (e) {
