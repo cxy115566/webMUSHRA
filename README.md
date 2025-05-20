@@ -5,7 +5,10 @@ This project is based on [webMUSHRA](https://github.com/audiolabs/webMUSHRA/rele
 - **Original Project**: [webMUSHRA](https://github.com/audiolabs/webMUSHRA/)
 - **Reference Content**: The core architecture and some code implementations of Vue.js were referenced and customized to fit a specific business scenario.
 
-**Specific requirements**: The podagent shows different questions in the same page and add Multiple Selection Question in the submit page
+**Specific requirements**: 
+1. show different questions in the same page
+2. add Multiple Selection Question in the submit page
+3. show the waveform for condition stimulus in mushra  
 
 
 # Podagent
@@ -15,7 +18,7 @@ This project is based on [webMUSHRA](https://github.com/audiolabs/webMUSHRA/rele
  
 ## Getting started: Setting up Podagent using PHP's builtin webserver
 
-To load audio files and save the results as csv text files, Podagent needs to run on a web server. If you already have `php` installed on your system (for example on Mac OS X), you can run a php development server on port 8000 from the terminal using `php -S localhost:8000` or `php -S 0.0.0.0:8000`.
+To load audio files and save the results as csv text files, Podagent needs to run on a web server. If you already have `php` installed on your system (for example on Mac OS X), you can run a php development server on port 8000 from the terminal using `php -S localhost:8000` for local test or `php -S 0.0.0.0:8000` for public ip.
 
 Now you can run 
 
